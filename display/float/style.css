@@ -34,13 +34,13 @@ h2 {
 
 /* Container စတိုင် */
 .container {
-    height: 180px;
+    height: auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 15px 0;
     padding: 10px;
-    overflow: hidden; /* Float ကြောင့် ကျော်သွားတာမဖြစ်အောင် */
+    overflow: hidden;
 }
 
 /* Clearfix အတွက် */
@@ -96,13 +96,24 @@ h2 {
 }
 
 .float-inherit {
-    float: inherit; /* Parent မှာ float မသတ်မှတ်ထားရင် none နဲ့အတူတူပဲ */
+    float: inherit;
     margin-right: 15px;
 }
 
-/* စာသားအတွက် စတိုင် */
-p {
-    margin: 10px 0;
-    line-height: 1.6;
+/* Code Block အတွက် စတိုင် */
+.code-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
+    margin: 10px;
+    max-width: 300px;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+.code-block code {
+    display: block;
 }
