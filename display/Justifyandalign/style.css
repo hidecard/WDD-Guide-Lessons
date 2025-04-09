@@ -1,0 +1,96 @@
+/* ဖောင့်နဲ့ အခြေခံစတိုင် */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ခေါင်းစီးတွေအတွက် စတိုင် */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1.8em;
+    margin: 30px 0 20px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Container စတိုင် */
+.container {
+    display: flex;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Box စတိုင် */
+.box {
+    width: 90px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box span {
+    font-size: 12px;
+    margin-top: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 400;
+}
+
+/* align-items Options */
+.flex-start { align-items: flex-start; }
+.center { align-items: center; }
+.flex-end { align-items: flex-end; }
+.stretch { align-items: stretch; }
+.baseline { align-items: baseline; }
+
+/* justify-content Options */
+.jc-flex-start { justify-content: flex-start; }
+.jc-center { justify-content: center; }
+.jc-flex-end { justify-content: flex-end; }
+.jc-space-between { justify-content: space-between; }
+.jc-space-around { justify-content: space-around; }
+.jc-space-evenly { justify-content: space-evenly; }
+
+/* stretch အတွက် box ကို height မသတ်မှတ်ထားပါ */
+.stretch .box {
+    height: auto;
+}
